@@ -1,17 +1,17 @@
 # Melville Design
 We'll cover the following
-+ [System Requirements](#System Requirements)
-+ [[#Use Case Diagram]]
-+ [[#Class Diagram]]
-+ [[#Activity Diagrams]]
-+ [[#Database]]
-+ [[#Server Infrastructure]]
-+ [[#CI/CD]]
-+ [[#Code]]
++ [System Requirements](#system-requirements)
++ [Use Case Diagram](#use-case-diagram)
++ [Class Diagram](#class-diagram)
++ [Activity Diagrams](#activity-diagrams)
++ [Database](#database)
++ [CI/CD](#cicd)
++ [#Code](#source-codee)
 
 Melville is an online reading website, which allow everyone to read all books from the internet. Users can upload their own book and share it for everyone, also they can save favorite book and read it later.
 
-![[Pasted image 20250304131928.png]]
+<img src="./Resources/Website_logo.png" alt="Melville">
+
 ## System Requirements
 
 We will focus on the following set of requirements while designing Melville:
@@ -81,7 +81,7 @@ In this database design there are 2 key concept to notice:
 	+ 1 book can have many category
 	+ 1 book can only have 1 author
 
-![[Pasted image 20250304215114.png]]
+<img src="./Resources/Database_diagram.png" alt="Database_diagram">
 
 ## CI/CD
 
@@ -89,8 +89,8 @@ We will use CI/CD to automatic build test and deploy to server. Jenkins will aut
 
 Here's the flow chart for Jenkins build steps:
 
-![[Pasted image 20250304230750.png]]
+<img src="./Resources/CICD_diagram.png" alt="Melville">
 
-## Code
+## Source Code
 
-All source code will store in gitlab, you can access with [this link](https://gitlab.fleeforezz.site/jso/melville.git)
+All source code will store in GitLab, you can access with [this link](https://gitlab.fleeforezz.site/jso/melville.git)
