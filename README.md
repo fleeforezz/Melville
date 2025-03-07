@@ -6,7 +6,7 @@ We'll cover the following
 + [Activity Diagrams](#activity-diagrams)
 + [Database](#database)
 + [CI/CD](#cicd)
-+ [#Code](#source-codee)
++ [Code](#source-code)
 
 Melville is an online reading website, which allow everyone to read all books from the internet. Users can upload their own book and share it for everyone, also they can save favorite book and read it later.
 
