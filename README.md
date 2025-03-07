@@ -18,26 +18,26 @@ We will focus on the following set of requirements while designing Melville:
 
 #### Main Function
 
-1. User should be able to login or signUp, also login and signup with google account.
-2. User should be able to reset the password if forgot.
-3. User should be able to deactivate their own account or delete user account and all data related to that account.
-4. User should be able to search books.
-5. User should be able to upload new books, view all the books that uploaded by them, edit uploaded books, remove uploaded book, download books, rating books and add book to favorite.
-6. Only system admin can have full control over users, books includes (view, create, update, delete users, books, category, authors, etc...).
-7. All uploaded images and book files will be stored to MinIO Server
+1. Users should be able to login or signUp, also login and signup with google account.
+2. Users should be able to reset the password if they forgot.
+3. Users should be able to deactivate their own account or delete user account and all data related to that account.
+4. Users should be able to search books.
+5. Users should be able to upload new books, view all the books that uploaded by them, edit uploaded books, remove uploaded book, download books, rating books and add book to favorite.
+6. Only system admin can have full control over users and books includes (view, create, update, delete users, books, category, authors, etc...).
+7. All uploaded images and book files will be stored in MinIO Server as a block storage
 8. All user password have to encrypted using Bcrypt.
 9. The website should be able to send notifications to users whenever a reservation is made/modified or there is an update.
 
-#### Deployment 
+#### Server side 
 
 1. A separate MSSQL Server using docker
-2. MinIO server to store our resources (user_image, author_image, book_file , etc....)
+2. A MinIO server to store our resources (user_image, author_image, book_file , etc....)
 3. Use Gitlab as version control, our git repository will have 2 branch (1 for development, 1 for main)
-4. Use Jenkins for CI
+4. Use Jenkins for CI (Continuous Intergration)
 5. Use Dockerhub for docker registry
 6. A git repository to store Kubernetes Manifest file
-7. Use ArgoCD for CD
-8. Deployment environment will be a kubernetes cluster with 2 namespaces (1 for testing, 1 for production)
+7. Use ArgoCD for CD (Continuous Deployment)
+8. Deployment environment will be a kubernetes cluster with 2 nodes and 2 namespaces (1 for testing, 1 for production)
 
 ## Use Case Diagram
 
@@ -51,10 +51,12 @@ Here are the top use cass of Melville website:
 
 + Search books: To search for books that user want to read
 + Create/Modify/View books: To upload a book, remove it, or view details about book.
++ Read books: Allow user to read books.
 + Add favorite: To save book and read it later.
 + Download book: To download the book that user want to read it on their device.
 
 Here is the use case diagram of our Melville website:
+[Updating]
 
 ## Database
 
