@@ -88,7 +88,7 @@ In this database design there are 2 key concept to notice:
 
 ## CI/CD
 
-We will use CI/CD to automatic build test and deploy to server. Jenkins will automatic detect changed branch, then it will start run build steps, after run complete jenkins will start dockerize the webapp and push to DockerHub.
+We will use CI/CD to automatic build test and deploy to server. Jenkins will automatic detect changed branch, then it will start run build steps, after run complete jenkins will start dockerize the webapp and push to DockerHub. After pushed to Dockerhub with a version tag, update the manifest file to match docker image version with the image in Dockerhub, then ArgoCD auto detect file changed an deploy to kubernetes.
 
 Here's the flow chart for Jenkins build steps:
 
