@@ -2,7 +2,7 @@
 We'll cover the following
 + [System Requirements](#system-requirements)
 + [Use Case Diagram](#use-case-diagram)
-+ [Class Diagram](#class-diagram)
++ [Features Graph](#features-graph)
 + [Activity Diagrams](#activity-diagrams)
 + [Database](#database)
 + [CI/CD](#cicd)
@@ -55,8 +55,9 @@ Here are the top use cass of Melville website:
 + Add favorite: To save book and read it later.
 + Download book: To download the book that user want to read it on their device.
 
-Here is the use case diagram of our Melville website:
-[Updating]
+## Features Graph
+
+<img src="./Resources/feature.png" alt="Database_diagram">
 
 ## Database
 
