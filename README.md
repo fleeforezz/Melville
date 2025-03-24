@@ -38,18 +38,22 @@ We will focus on the following set of requirements while designing Melville:
 
 1. Admin should be able to have the same functions as author. Except request function.
 2. Admin should be able to view dashboard that have total of books, users, categories, city, country, created users. 
-2. Admin should be able to add, edit, remove users, books, categories, location.
+3. Admin should be able to add, edit, remove users, books, categories, location.
+4. Admin should be able to view, except, refuse, user request.
 
 #### Server side 
 
-1. A separate MSSQL Server using docker
-2. A MinIO server to store our resources (user_image, author_image, book_file , etc....)
-3. Use Gitlab as version control, our git repository will have 2 branch (1 for development, 1 for main)
-4. Use Jenkins for CI (Continuous Intergration)
-5. Use Dockerhub for docker registry
-6. A git repository to store Kubernetes Manifest file
-7. Use ArgoCD for CD (Continuous Deployment)
-8. Deployment environment will be a kubernetes cluster with 2 nodes and 2 namespaces (1 for testing, 1 for production)
+1. A separate MSSQL Server using docker for storing website data.
+2. A MinIO server to store resources (user_image, author_image, book_file , etc....).
+3. Use Gitlab as version control, our git repository will have 2 branch (1 for development, 1 for main).
+4. Use Jenkins for Continuous Intergration.
+5. A Sonarqube server for code analys and testing.
+6. Use Dockerhub for docker registry.
+7. A git repository to store Kubernetes Manifest file.
+8. Use ArgoCD for Continuous Deployment.
+9. Deployment environment will be a kubernetes cluster with 2 nodes 3 pods, and 2 namespaces (1 for testing, 1 for production).
+10. A reverse proxy server (Nginx Proxy Manager).
+11. Cloudflare for dns and domain.
 
 ## Use Case Diagram
 
