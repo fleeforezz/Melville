@@ -20,30 +20,25 @@ We will focus on the following set of requirements while designing Melville:
 
 ##### For user:
 1. Users should be able to Login or signUp, also login and signup with google account.
-
 2. Users should be able to reset the password if they forgot.
-
 3. Users should be able to edit their profile account.
-
 4. Users should be able to deactivate their own account or delete user account and all data related to that account.
-
 5. Users should be able to reactivate their account.
-
 6. Users should be able to search books.
-
 7. Users should be able to read, download, add favorite, rating, share link, like a book.
-
 8. Users should be able to remove favorite.
+9. Users should be able to request to admin for upgrade to author role.
 
 ##### For author:
 
-6. Only system admin can have full control over users and books includes (view, create, update, delete users, books, category, authors, etc...).
+1. Author should be able to have the same functions as user, but author able to add, edit, remove books, categories.
+2. Author don't have to request admin to upgrade role since they already author.
 
-7. All uploaded images and book files will be stored in MinIO Server as a block storage
+##### For admin:
 
-8. All user password have to encrypted using Bcrypt.
-
-9. The website should be able to send notifications to users whenever a reservation is made/modified or there is an update.
+1. Admin should be able to have the same functions as author. Except request function.
+2. Admin should be able to view dashboard that have total of books, users, categories, city, country, created users. 
+2. Admin should be able to add, edit, remove users, books, categories, location.
 
 #### Server side 
 
