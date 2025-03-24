@@ -8,7 +8,7 @@ We'll cover the following
 + [CI/CD](#cicd)
 + [Code](#source-code)
 
-Melville is an online reading website, which allow everyone to read all books from the internet. Users can upload their own book and share it for everyone, also they can save favorite book and read it later.
+Melville is an online reading website, which allow everyone to read all books from the internet. All operations of this website are controlled by **admin**. To be able to upload books **users** will have to make a request to admin to grant permission. When permission granted, user will become, **author** then they can upload their books. If user haven't register an account yet they will called **guest** and can view book only.
 
 <img src="./Resources/Website_logo.png" alt="Melville">
 
@@ -18,14 +18,31 @@ We will focus on the following set of requirements while designing Melville:
 
 #### Main Function
 
-1. Users should be able to login or signUp, also login and signup with google account.
+##### For user:
+1. Users should be able to Login or signUp, also login and signup with google account.
+
 2. Users should be able to reset the password if they forgot.
-3. Users should be able to deactivate their own account or delete user account and all data related to that account.
-4. Users should be able to search books.
-5. Users should be able to upload new books, view all the books that uploaded by them, edit uploaded books, remove uploaded book, download books, rating books and add book to favorite.
+
+3. Users should be able to edit their profile account.
+
+4. Users should be able to deactivate their own account or delete user account and all data related to that account.
+
+5. Users should be able to reactivate their account.
+
+6. Users should be able to search books.
+
+7. Users should be able to read, download, add favorite, rating, share link, like a book.
+
+8. Users should be able to remove favorite.
+
+##### For author:
+
 6. Only system admin can have full control over users and books includes (view, create, update, delete users, books, category, authors, etc...).
+
 7. All uploaded images and book files will be stored in MinIO Server as a block storage
+
 8. All user password have to encrypted using Bcrypt.
+
 9. The website should be able to send notifications to users whenever a reservation is made/modified or there is an update.
 
 #### Server side 
