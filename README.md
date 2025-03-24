@@ -59,7 +59,7 @@ We will focus on the following set of requirements while designing Melville:
 
 We have 3 main Actors in our system:
 
-+ **Admin:** Responsible for full control over users, books, categories
++ **Admin:** Responsible for full control over users, books, categories, location
 + **Users:** Will be able to uploads books, view uploaded books, modified books, remove books, add favorite book, download book.
 + Guest: Can only view book and download books, but cannot add favorite, uploads books, view uploaded books, modified books, remove books,
 
