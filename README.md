@@ -3,6 +3,7 @@ We'll cover the following
 + [System Requirements](#system-requirements)
 + [Use Case Diagram](#use-case-diagram)
 + [Features Graph](#features-graph)
++ [UI/UX Design](#ui-ux-design)
 + [Activity Diagrams](#activity-diagrams)
 + [Database](#database)
 + [CI/CD](#cicd)
@@ -75,6 +76,11 @@ Here are the top use cass of Melville website:
 ## Features Graph
 
 <img src="./Resources/feature.png" alt="Database_diagram">
+
+## UI-UX Design
+
+[Link to Figma](https://www.figma.com/design/4Bk0ok2RI5quodkJmlCQwq/HomeLab?node-id=1401-159&t=8VXufYJER69MMThV-1)
+
 
 ## Database
 
