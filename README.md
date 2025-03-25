@@ -59,10 +59,10 @@ We will focus on the following set of requirements while designing Melville:
 
 We have 3 main Actors in our system:
 
-+ **Users:** Will be able to uploads books, view uploaded books, modified books, remove books, add favorite book, download book.
++ **Users:** Will be able to read, favorite, rating, download, like books.
 + **Authors:** Will be able to add books, modified books, remove books, add category
 + **Admin:** Responsible for full control over users, books, categories, location
-+ Guest: Can only view book and download books, but cannot add favorite, uploads books, view uploaded books, modified books, remove books,
++ **Guest**: Can only view book and download books.
 
 Here are the top use cass of Melville website:
 
@@ -93,9 +93,9 @@ Our system will have total 12 table:
 + Rate
 
 In this database design there are 2 key concept to notice: 
-1. Users table:
-	+ User can upload as many books as they like 
-	+ User can add many favorite books to their bookshelf as they like
+1. Users table with author role:
+	+ User with author role can upload as many books as they like 
+	+ User with author role can add many favorite books to their bookshelf as they like
 	+ User can rate many books as they like
 2. Books table:
 	+ 1 book can have many category
@@ -113,4 +113,4 @@ Here's the flow chart for Jenkins build steps:
 
 ## Source Code
 
-All source code will store in GitLab, you can access with [this link](https://gitlab.fleeforezz.site/jso/melville.git)
+All source code will be stored in GitLab, you can access with [this link](https://gitlab.fleeforezz.site/jso/melville.git)
