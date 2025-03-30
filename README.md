@@ -75,7 +75,17 @@ Here are the top use cass of Melville website:
 
 ## Features Graph
 
-<img src="./Resources/feature.png" alt="Database_diagram">
+#### Admin side
+<img src="./Resources/admin_feature.png" alt="Database_diagram">
+
+#### Reader side
+<img src="./Resources/reader_feature.png" alt="Database_diagram">
+
+#### Author side
+<img src="./Resources/author_feature.png" alt="Database_diagram">
+
+#### Guest side
+<img src="./Resources/guest_feature.png" alt="Database_diagram">
 
 ## UI-UX Design
 
